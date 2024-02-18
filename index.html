@@ -378,6 +378,37 @@
 							</ul>
 							</p>
 						</div>
+						<div>
+							<style>
+								/* Styling for the button */
+								.download-btn {
+								  display: inline-block;
+								  padding: 10px 20px;
+								  background-color: #ff5b5b; /* Red */
+								  color: #fff;
+								  text-decoration: none;
+								  border-radius: 5px;
+								  border: none;
+								  font-size: 16px;
+								  cursor: pointer;
+								  transition: background-color 0.3s ease;
+								}
+								.download-btn:hover {
+								  background-color: #ff9f9f; /* Lighter red on hover */
+								}
+							  </style>
+
+							<div>
+							<a href="https://drive.google.com/file/d/1WYZ9G0kqq5cRwu7uYgN0XHxk_Elq_1mq/view?usp=drivesdk" download class="download-btn">Download Resume</a>
+						    </div>
+							<script>
+								// JavaScript code to track the download
+								document.querySelector('.download-btn').addEventListener('click', function() {
+								  // Track download here, for example, using analytics or other tracking tools
+								  console.log('Resume downloaded');
+								});
+							</script>
+						</div>
 						<!--
 							<div class="resume-item">
 							<h4>Web Development & Designing</h4>
